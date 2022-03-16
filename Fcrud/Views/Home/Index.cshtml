@@ -1,0 +1,30 @@
+﻿@model List<Fcrud.Models.StuModel>
+
+
+@{
+    ViewBag.Title = "Home Page";
+}
+<h1>Student Detail</h1>
+<table class="table table-hover table-bordered table-responsive">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Company</th>
+        <th>Email</th>
+    </tr>
+    @foreach (var i in Model)
+    {
+    <tr>
+        <th>@i.id</th>
+        <th>@i.name</th>
+        <th>@i.age</th>
+        <th>@i.company</th>
+        <th>@i.email</th>
+
+    </tr>
+
+    }
+
+</table>
+
